@@ -16,6 +16,8 @@
 2. 配置 iOS 的捷径，捷径如图
 
 ![image](https://user-images.githubusercontent.com/15976103/132662709-aabc32cc-9629-4ac4-b9c3-67b2feba13ce.png)
+![image](https://user-images.githubusercontent.com/15976103/132666328-3d5eaf91-15f2-49d2-aa40-e0d02f71dc1f.png)
+
 
 3. 复制网易云链接如下图，点击复制链接
 
