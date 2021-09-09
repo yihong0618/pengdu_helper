@@ -67,7 +67,7 @@ func main() {
 	contentList := strings.Split(content, "\n")
 	e := epub.NewEpub(title)
 
-	e.SetAuthor("test")
+	e.SetAuthor("hongyi_bot")
 	body := "<h1>" + title + "</h1>"
 	link := BASE_MUSIC_URL + musicId
 	body += "<a href=\"" + link + "\">" + link + "</a>"
