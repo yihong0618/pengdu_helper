@@ -1,0 +1,33 @@
+name: Pengdu gogogo
+
+on:
+  workflow_dispatch:
+      inputs:
+      message:
+        description: 'netease cloud copy message'
+        required: false
+
+jobs:
+  build:
+    name: Build
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - name: Set up Go 1.x
+      uses: actions/setup-go@v2
+      with:
+        go-version: ^1.14
+    - name: run scripts
+      run: |
+        go run main.go -tgid="${{ secrets.TELE_CHAT_ID }}" -tgtoken=${{ secrets.TELE_TOKEN }} -nestring="${{ github.event.inputs.message }}"
+      
+    - name: Check file existence
+      id: check_files
+      uses: andstor/file-existence-action@v1
+      with:
+        files: "music_lrc.epub"
+    - name: send epub file to telegram
+      id: send_epub
+      run: | 
+        curl -v -F "chat_id=${{ secrets.TELE_CHAT_ID }}" -F document=@music_lrc.epub https://api.telegram.org/bot${{ secrets.TELE_TOKEN }}/sendDocument
+      if: steps.check_files.outputs.files_exists == 'true'
