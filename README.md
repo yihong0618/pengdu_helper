@@ -7,7 +7,7 @@
 ## 前提
 
 1. 有访问自由互联网的环境，有 telegram 请自行查询如何写 telegram bot
-2. 又《捧读》app
+2. 有《捧读》app
 3. fork 或者 clone 这个项目，自行配置需要的 secrets
 
 ## 之后
