@@ -25,5 +25,4 @@
 
 # 效果 --> 就可以用《捧读》学习你喜欢的音乐啦
 
-![a40f64ac06e7792ff33de383d04a637](https://user-images.githubusercontent.com/15976103/132663339-dfce6e51-2681-410b-a752-54c31eca3308.jpg)
 ![ce7f27caa5683901f90c9e164cfe0fe](https://user-images.githubusercontent.com/15976103/132663493-5132ef3c-b376-4db7-ac50-e9880ea97567.jpg)
