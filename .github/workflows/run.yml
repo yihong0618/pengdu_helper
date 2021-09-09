@@ -3,9 +3,9 @@ name: Pengdu gogogo
 on:
   workflow_dispatch:
       inputs:
-      message:
-        description: 'netease cloud copy message'
-        required: false
+        message:
+          description: 'netease cloud copy message'
+          required: false
 
 jobs:
   build:
