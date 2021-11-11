@@ -28,3 +28,20 @@
 # 效果 --> 就可以用《捧读》学习你喜欢的音乐啦
 
 ![ce7f27caa5683901f90c9e164cfe0fe](https://user-images.githubusercontent.com/15976103/132663493-5132ef3c-b376-4db7-ac50-e9880ea97567.jpg)
+
+
+# 如果网页端的网易云复制链接跑以下命令即可
+
+e.g.
+```shell
+go run main.go -nestring https://music.163.com/#/song?id=112143
+```
+
+# 利用 srt or ass 生成 epub 交给捧读
+
+```shell
+go run main.go -filestring {$something}.srt 
+
+# 带时间
+go run main.go -filestring {$something}.srt -withtime true
+```
